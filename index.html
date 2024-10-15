@@ -11,53 +11,126 @@
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <!-- Custom styles for this template -->
+    <link href="https://db.onlinewebfonts.com/c/59a1b70cf883faa95ebf7864fea3d0d6?family=BC+Alphapipe+TSB+Bold" rel="stylesheet" type="text/css"/>
+    <link href="fonts.css" rel="stylesheet">
     <link href="cover.css" rel="stylesheet">
+    <link href="btn.css" rel="stylesheet">
   </head>
   
   <body class="text-center">
-    <nav class="navbar sticky-top container" style="padding: 8px 20%;">
-      <!-- <nav class="navbar sticky-top container"> -->
-      <h3 class="masthead-brand" style="margin-right: 10%;">Ctrl-G</h3>
-      <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#demo">Demo</a>
-        <a class="nav-link" href="#resources">Resources</a>
-      </nav>
+    <nav class="navbar sticky-top" id = "navbar">
+      <div class="container" id = "nav-container" >
+        
+        <h2 class="masthead-brand header-font" style="margin-right: 10%;"><a href="#main">Ctr<span class="long-space">l&ndash;</span>G</a></h2>
+        <nav class="nav nav-masthead justify-content-center">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#demo">Demo</a>
+          <a class="nav-link" href="#resources">Resources</a>
+        </nav>
+      </div>
     </nav>
-    
     <div class="cover-container mx-auto flex-column">
-      <section role="main" class="custom-container container" id = "main">
-        <div class="row" style="height: 20%;"></div>
-        <div class="row">
-          <div class="col">
-            <h1 class="cover-heading">Cover #1</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-            <p class="lead">
+      <!-- First Section -->
+      <section role="main" class="custom-container container-fluid" id = "main">
+        <!-- <div class="row" style="height: 25%;"></div> -->
+        <div class="row justify-content-center w-100">
+          <div class="col-12 col-lg-5">
+            <h1 class="title header-font">Ctr<span class="long-space">l&ndash;</span>G</h1>
+            <h3 class="subtitle">Adding control to LLMs.</h3>
+            <!-- <p class="lead">Ctrl-G combines any production-ready LLM with a Hidden Markov Model (HMM), enabling LLM outputs to adhere to logical constraints represented as deterministic finite automata (DFAs).</p> -->
+            
+            <!-- <p class="lead">
               <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-            </p>
+            </p> -->
+          </div>
+          <div class="col-12 col-lg-1" style="height: 5vh;"></div>
+          <div class="col-12 col-lg-6">
+            <img src="src/test.png" class="img-fluid" alt="Responsive image" id="teaser-img">
           </div>
         </div>
       </section>
-      <section class="custom-container" id = "about" style="background-color: red;">
-        <div class="row" style="height: 20%;"></div>
-        <div class="row">
-          <div class="col">
-            <h1 class="cover-heading">About</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-            </p>
+    </div>
+    <!-- About Section -->
+    <div class="cover-container mx-auto flex-column">
+      <section class="custom-container container-fluid" id = "about">
+        <!-- <div class="row" style="height: 25%;"></div> -->
+        <div class="row justify-content-center w-100">
+          <!-- <div class="col-1"></div> -->
+          <div class="col-12">
+            <!-- <h1 class="title header-font">How does it work?</h1> -->
+            <h1 class="subtitle">How does it work?</h1>
+          </div>
+          <div class="col-12">
+            <img src="src/about.png" class="img-fluid" alt="Responsive image" id="about-img">
+          </div>
+          <div class="col-12">
+            <h3 class="subtitle">Explanation...</h3>
           </div>
         </div>
       </section>
-
-      <!-- <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+    </div>
+    <!-- Demo Section -->
+    <div class="cover-container mx-auto flex-column">
+      <section class="custom-container container-fluid" id = "demo">
+        <!-- <div class="row" style="height: 25%;"></div> -->
+        <div class="row justify-content-center w-100">
+          <div class="col-12 col-lg-7">
+            <img src="src/demo.png" class="img-fluid" alt="Responsive image" id="teaser-img">
+          </div>
+          <div class="col-12 col-lg-1" style="height: 5vh;"></div>
+          <div class="col-12 col-lg-4 ">
+            <h1><span class="header-font">Ctr<span class="long-space">l&ndash;</span>G</span> Interface</h1>
+            <h3 class="subtitle">Explanation...</h3>
+            <button class="interactive" style="margin-top: 2vh;">GitHub</button>
+          </div>
+          
         </div>
-      </footer> -->
+      </section>
+    </div>
+    <!-- Resources Section -->
+    <div class="cover-container mx-auto flex-column">
+      <section class="custom-container container-fluid" id = "resources">
+        <!-- <div class="row" style="height: 25%;"></div> -->
+        <div class="row justify-content-center w-100">
+          <!-- <div class="col-1"></div> -->
+          <div class="col-12">
+            <!-- <h1 class="title header-font">How does it work?</h1> -->
+            <h1 class="subtitle">Resources</h1>
+          </div>
+          
+          <div class="col-12 tab col-xl-3">
+            <h3 class="subtitle">Paper </h3>
+            <!-- <i class="bi bi-file-earmark-text-fill align-text-top" style="font-size: 1em; color: #283146;"></i> -->
+            <p>Proceedings of <i>Neurips 2024</i>.</p>
+            <button class="interactive" >Link</button>
+          </div>
+          <div class="col-0 col-xl-1" style="height: 5vh;"></div>
+          <div class="col-12 tab col-xl-3">
+            <h3 class="subtitle">Code</h3>
+            <p>Code for training <span class="header-font">Ctr<span class="long-space">l&ndash;</span>G</span> <i>HMMs</i>.</p>
+            <button class="interactive">Link</button>
+          </div>
+          <div class="col-0 col-xl-1" style="height: 5vh;"></div>
+          <div class="col-12 tab col-xl-3">
+            <h3 class="subtitle">Models <i class="bi bi-database-fill align-text-top" style="font-size: 1em; color: #283146;"></i></h3>
+            <p>Trained HMM and Llama <i>checkpoints</i>.</p>
+            <button class="interactive" >Link</button>
+          </div>
+        
+          <!-- <div class="col-1"></div> -->
+          <div class="col-12" style="height: 5vh;"></div>
+          <div class="col-12">
+            <!-- <h1 class="title header-font">How does it work?</h1> -->
+            <h1 class="subtitle">Qualitative Examples</h1>
+            <p>Check out our evaluation results on <i>CoAuthor</i>, <i>CommonGen</i> and <i>TextInfilling</i> datasets.</p>
+            <button class="interactive" style="margin-top: 2vh;">Link</button>
+          </div>
+        </div>
+      </section>
     </div>
 
 
@@ -69,5 +142,6 @@
     <script>window.jQuery || document.write('<script src="bootstrap-4.0.0/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
     <script src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="basic.js"></script>
   </body>
 </html>
