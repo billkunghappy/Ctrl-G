@@ -9,6 +9,10 @@ a:hover {
   color: black;
   text-decoration:none;
 }
+
+.interactive > a{
+  color: #ffffff;
+}
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
