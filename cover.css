@@ -130,7 +130,11 @@ body {
   border-bottom: .25rem solid transparent;
   transition: background-color 200ms;
 }
-
+@media (max-width: 500px) {
+  .nav-masthead .nav-link {
+    font-size: 0.8rem;
+  }
+}
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
   border-bottom-color: rgba(0, 0, 0, .75);
@@ -171,10 +175,23 @@ body {
     /* text-shadow: 2px 2px #33333335; */
   } 
 }
+@media (max-width: 500px) {
+  .title {
+    font-size: 2em;
+    /* text-shadow: 2px 2px #33333335; */
+  } 
+}
 
 .subtitle{
   margin-top: 2vh;
   margin-bottom: 2vh;
+}
+
+@media (max-width: 500px) {
+  .subtitle {
+    font-size: 16px;
+    /* text-shadow: 2px 2px #33333335; */
+  } 
 }
 
 /*
